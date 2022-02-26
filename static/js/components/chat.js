@@ -303,7 +303,7 @@ function actionTrigger() {
 
 function customActionTrigger() {
     $.ajax({
-        url: "https://n4qgczfrbg.execute-api.us-east-1.amazonaws.com/prod/webhook/",
+        url: "https://n4qgczfrbg.execute-api.us-east-1.amazonaws.com/prod/webhooks/",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
