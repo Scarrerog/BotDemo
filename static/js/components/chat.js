@@ -306,6 +306,9 @@ function actionTrigger() {
 
 function customActionTrigger() {
     $.ajax({
+        xhrFields: {
+            withCredentials: true
+        },
         url: "https://n4qgczfrbg.execute-api.us-east-1.amazonaws.com/prod/webhook/",
         type: "POST",
         contentType: "application/json",
