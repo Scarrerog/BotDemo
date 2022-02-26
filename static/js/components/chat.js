@@ -225,6 +225,9 @@ function setBotResponse(response) {
  */
 function send(message) {
     $.ajax({
+        xhrFields: {
+            withCredentials: true
+        },
         url: rasa_server_url,
         type: "POST",
         contentType: "application/json",
