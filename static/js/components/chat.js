@@ -225,9 +225,6 @@ function setBotResponse(response) {
  */
 function send(message) {
     $.ajax({
-        xhrFields: {
-            withCredentials: true
-        },
         url: rasa_server_url,
         type: "POST",
         contentType: "application/json",
@@ -306,9 +303,6 @@ function actionTrigger() {
 
 function customActionTrigger() {
     $.ajax({
-        xhrFields: {
-            withCredentials: true
-        },
         url: "https://n4qgczfrbg.execute-api.us-east-1.amazonaws.com/prod/webhook/",
         type: "POST",
         contentType: "application/json",
